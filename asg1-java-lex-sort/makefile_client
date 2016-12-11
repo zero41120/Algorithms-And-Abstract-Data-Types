@@ -1,0 +1,13 @@
+#------------------------------------------------------------------------------
+#
+#  This makefile compiles ListClient.java and List.java, then runs
+#  the ListClient class for a quick output testing.
+#  After quick testing, the related class are deleted.
+#
+#------------------------------------------------------------------------------ 
+
+TEST:
+	javac ListClient.java
+	javac List.java
+	java ListClient
+	rm -f List*.class
